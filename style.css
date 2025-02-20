@@ -1,0 +1,36 @@
+:root{
+    --cor-hover: white
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+}
+
+.galeria{
+    margin-top: 15px;
+    display: columns;
+    columns: 4;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Para esconder o overflow do efeito de brilho */
+    position: relative; /* Para posicionar o efeito de brilho */
+}
+
+.galeria img {
+    width: 100%;
+    transition: 1s;
+}
+
+.galeria img:hover{
+    transform: translateX(-10px);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(100, 0, 255, 0.3);
+}
